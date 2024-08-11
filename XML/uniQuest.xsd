@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns="https://www.university.com/uniQuest"
+targetNamespace="https://www.university.com/uniQuest"
+elementFormDefault="qualified"> 
+  <xs:complexType name="UserType">
+    <xs:sequence>
+      <xs:element name="user-id" type="xs:string" />
+      <xs:element name="user-name" type="xs:string" />
+      <xs:element name="user-phone" type="xs:string" />  <xs:element name="user-email" type="xs:string" />  <xs:element name="user-course" type="xs:string" />
+      <xs:element name="user-address" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="user">
+    <xs:complexType>
+      <xs:choice>
+        <xs:element name="user1" type="UserType" />
+        <xs:element name="user2" type="UserType" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="RanksType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" />
+      <xs:element name="rank" type="xs:integer" />
+      <xs:element name="location" type="xs:string" />
+      <xs:element name="contact-info" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="Rank">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ranks1" type="RanksType" />
+        <xs:element name="ranks2" type="RanksType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="ProgrammeType">
+    <xs:sequence>
+      <xs:element name="program-id" type="xs:string" />
+      <xs:element name="name" type="xs:string" />
+      <xs:element name="Duration" type="xs:integer" />  <xs:element name="level" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="Program">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="programme1" type="ProgrammeType" />
+        <xs:element name="programme2" type="ProgrammeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="ScholarshipType">
+    <xs:sequence>
+      <xs:element name="scholarshipid" type="xs:string" />
+      <xs:element name="scholarship-name" type="xs:string" />
+      <xs:element name="scholarship-amount" type="xs:decimal" />  <xs:element name="scholarship-eligibility" type="xs:string" />
+      <xs:element name="scholarship-deadline" type="xs:date" />  <xs:element name="scholarship-descryption" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="Scholarship">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="scholarship1" type="ScholarshipType" />
+        <xs:element name="scholarship2" type="ScholarshipType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="TrendType">
+    <xs:sequence>
+      <xs:element name="trend-id" type="xs:string" />
+      <xs:element name="title" type="xs:string" />
+      <xs:element name="Descryption" type="xs:string" />
+      <xs:element name="date" type="xs:date" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="trend">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="trend1" type="TrendType" />
+        <xs:element name="trend2" type="TrendType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="MessageType">
+    <xs:sequence>
+      <xs:element name="messageid" type="xs:string" />
+      <xs:element name="senderid" type="xs:string" />
+      <xs:element name="recieverid" type="xs:string" />
+      <xs:element name="content" type="xs:string" />
+      <xs:element name="timestamp" type="xs:dateTime" />
+      <xs:element name="status" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="message">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="message1" type="MessageType" />
+        <xs:element name="message2" type="MessageType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="FavoriteType">
+    <xs:sequence>
+      <xs:element name="favorite-id" type="xs:string" />
+      <xs:element name="studentid" type="xs:string" />
+      <xs:element name="universityid" type="xs:string" />
+      <xs:element name="program-id" type="xs:string" />
+      <xs:element name="date-added" type="xs:date" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="favorite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="favorite1" type="FavoriteType" />
+        <xs:element name="favorite2" type="FavoriteType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="NewsType">
+    <xs:sequence>
+      <xs:element name="newsid" type="xs:string" />
+      <xs:element name="title" type="xs:string" />
+      <xs:element name="content" type="xs:string" />
+      <xs:element name="author" type="xs:string" />
+      <xs:element name="date-added" type="xs:date"/>               
+      <xs:element name="source" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="news">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="news1" type="NewsType" />
+        <xs:element name="news2" type="NewsType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="university">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="user" minOccurs="0" />
+        <xs:element name="Rank" minOccurs="0" />
+        <xs:element name="Program" minOccurs="0" />
+        <xs:element name="Scholarship" minOccurs="0" />
+        <xs:element name="trend" minOccurs="0" />
+        <xs:element name="message" minOccurs="0" />
+        <xs:element name="favorite" minOccurs="0" />
+        <xs:element name="news" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
