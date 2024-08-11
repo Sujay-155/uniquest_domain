@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!-- <?xml-model href="uniquest1.dtd" type="application/xml-dtd"?> -->
+<?xml-stylesheet href="uniquest.xsl" type="text/css"?>
+<?xml-model href="uniQuest.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+ <university xmlns="https://www.university.com/uniQuest"> 
+ <!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="https://www.university.com/uniQuest uniQuest.xsd"> -->
+
+
+  <user>
+    <user1>
+      <user-id>101</user-id>
+      <user-name>Sujay Sharma</user-name>
+      <user-phone>8766264XXX</user-phone>
+      <user-email>demo@gmail.com</user-email>
+      <user-course>MCA</user-course>
+      <user-address>Bengaluru</user-address>
+    </user1>
+
+    <user2>
+
+      <user-id>102</user-id>
+      <user-name>Yaash Sharma</user-name>
+      <user-phone>31932364XXX</user-phone>
+      <user-email>demo@gmail.com</user-email>
+      <user-course>MCA</user-course>
+      <user-address>Bengaluru</user-address>
+    </user2>
+
+
+  </user>
+
+  <Rank>
+
+    <ranks1>
+      <name>Christ University</name>
+      <rank>4</rank>
+      <location>Bengaluru</location>
+      <contact-info>christ@support</contact-info>
+
+    </ranks1>
+
+    <ranks2>
+      <name>Delhi University</name>
+      <rank>2</rank>
+      <location>Delhi</location>
+      <contact-info>DU@support</contact-info>
+
+    </ranks2>
+
+  </Rank>
+
+  <Program>
+
+    <programme1>
+      <program-id>001</program-id>
+      <name>BCA</name>
+      <Duration>3</Duration>
+      <level>UG</level>
+    </programme1>
+
+    <programme2>
+      <program-id>002</program-id>
+      <name>MCA</name>
+      <Duration>2</Duration>
+      <level>PG</level>
+    </programme2>
+
+
+  </Program>
+
+  <Scholarship>
+    <scholarship1>
+      <scholarshipid>501</scholarshipid>
+      <scholarship-name>Buddy4Study</scholarship-name>
+      <scholarship-amount>4,00,000</scholarship-amount>
+      <scholarship-eligibility>Min.70% in previous class</scholarship-eligibility>
+      <scholarship-deadline>10/10/25</scholarship-deadline>
+      <scholarship-descryption>For Needy Students</scholarship-descryption>
+    </scholarship1>
+
+    <scholarship2>
+      <scholarshipid>502</scholarshipid>
+      <scholarship-name>Buddy4Study</scholarship-name>
+      <scholarship-amount>10,00,000</scholarship-amount>
+      <scholarship-eligibility>Min.85% in previous class</scholarship-eligibility>
+      <scholarship-deadline>10/10/25</scholarship-deadline>
+      <scholarship-descryption>For Needy Students</scholarship-descryption>
+    </scholarship2>
+  </Scholarship>
+
+  <trend>
+    <trend1>
+      <trend-id>1</trend-id>
+      <title>Christ University</title>
+      <Descryption>Overall Trending Universities</Descryption>
+      <date>11/08/24</date>
+    </trend1>
+
+    <trend2>
+      <trend-id>2</trend-id>
+      <title>VIT Vellore</title>
+      <Descryption>Trending University in Vellore</Descryption>
+      <date>11/08/24</date>
+    </trend2>
+  </trend>
+
+  <message>
+    <message1>
+      <messageid>01</messageid>
+      <senderid>01</senderid>
+      <recieverid>01</recieverid>
+      <content>Message content</content>
+      <timestamp>10:25 AM</timestamp>
+      <status>Read</status>
+    </message1>
+
+    <message2>
+      <messageid>02</messageid>
+      <senderid>02</senderid>
+      <recieverid>02</recieverid>
+      <content>Message content</content>
+      <timestamp>10:26 AM</timestamp>
+      <status>Read</status>
+    </message2>
+  </message>
+
+  <favorite>
+    <favorite1>
+      <favorite-id>01</favorite-id>
+      <studentid>01</studentid>
+      <universityid>01</universityid>
+      <program-id>01</program-id>
+      <date-added>11/08/24</date-added>
+    </favorite1>
+
+    <favorite2>
+      <favorite-id>02</favorite-id>
+      <studentid>02</studentid>
+      <universityid>02</universityid>
+      <program-id>02</program-id>
+      <date-added>11/08/24</date-added>
+    </favorite2>
+  </favorite>
+
+  <news>
+    <news1>
+      <newsid>01</newsid>
+      <title>Notice</title>
+      <content>Notice content</content>
+      <author>HOD</author>
+      <date-added>11/08/24</date-added> 
+      <source>University</source>
+    </news1>
+
+    <news2>
+      <newsid>02</newsid>
+      <title>Notice</title>
+      <content>Notice content</content>
+      <author>HOD</author>
+      <date-added>11/08/24</date-added> 
+      <source>University</source>
+    </news2>
+  </news>
+
+
+</university>

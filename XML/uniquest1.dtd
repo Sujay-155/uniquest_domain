@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT university (user,Rank,Program,Scholarship,trend, message, favorite, news)>
+<!ELEMENT user (user1,user2)>
+<!ELEMENT user1 (user-id,user-name,user-phone,user-email,user-course,user-address)>
+<!ELEMENT user-id (#PCDATA)>
+<!ELEMENT user-name (#PCDATA)>
+<!ELEMENT user-phone (#PCDATA)>
+<!ELEMENT user-email (#PCDATA)>
+<!ELEMENT user-course (#PCDATA)>
+<!ELEMENT user-address (#PCDATA)>
+<!ELEMENT user2 (user-id,user-name,user-phone,user-email,user-course,user-address)>
+<!ELEMENT Rank (ranks1,ranks2)>
+<!ELEMENT ranks1 (name,rank,location,contact-info)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT rank (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT contact-info (#PCDATA)>
+<!ELEMENT ranks2 (name,rank,location,contact-info)>
+<!ELEMENT Program (programme1,programme2)>
+<!ELEMENT programme1 (program-id,name,Duration,level)>
+<!ELEMENT program-id (#PCDATA)>
+<!ELEMENT Duration (#PCDATA)>
+<!ELEMENT level (#PCDATA)>
+<!ELEMENT programme2 (program-id,name,Duration,level)>
+<!ELEMENT Scholarship (scholarship1,scholarship2)>
+<!ELEMENT scholarship1 (scholarshipid,scholarship-name,scholarship-amount,scholarship-eligibility,scholarship-deadline,scholarship-descryption)>
+<!ELEMENT scholarshipid (#PCDATA)>
+<!ELEMENT scholarship-name (#PCDATA)>
+<!ELEMENT scholarship-amount (#PCDATA)>
+<!ELEMENT scholarship-eligibility (#PCDATA)>
+<!ELEMENT scholarship-deadline (#PCDATA)>
+<!ELEMENT scholarship-descryption (#PCDATA)>
+<!ELEMENT scholarship2 (scholarshipid,scholarship-name,scholarship-amount,scholarship-eligibility,scholarship-deadline,scholarship-descryption)>
+<!ELEMENT trend (trend1, trend2)>
+<!ELEMENT trend1 (trend-id, title, Descryption, date)>
+<!ELEMENT trend-id (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT Descryption (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT trend2 (trend-id, title, Descryption, date)>
+<!ELEMENT message (message1, message2)>
+<!ELEMENT message1 (messageid, senderid, recieverid, content, timestamp, status)>
+<!ELEMENT messageid (#PCDATA)>
+<!ELEMENT senderid (#PCDATA)>
+<!ELEMENT recieverid (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+<!ELEMENT timestamp (#PCDATA)>
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT message2 (messageid, senderid, recieverid, content, timestamp, status)>
+
+<!ELEMENT favorite (favorite1, favorite2)>
+<!ELEMENT favorite1 (favorite-id, studentid, universityid, program-id, date-added)>
+<!ELEMENT favorite-id (#PCDATA)>
+<!ELEMENT studentid (#PCDATA)>
+<!ELEMENT universityid (#PCDATA)>
+<!ELEMENT date-added (#PCDATA)>
+<!ELEMENT favorite2 (favorite-id, studentid, universityid, program-id, date-added)>
+
+
+
+<!ELEMENT news (news1, news2)>
+<!ELEMENT news1 (newsid, title, content, author, source)>
+<!ELEMENT newsid (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!--<!ELEMENT date-added (#PCDATA)>-->
+<!ELEMENT source (#PCDATA)>
+<!ELEMENT news2 (newsid, title, content, author, source)> 
